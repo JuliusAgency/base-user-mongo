@@ -1,5 +1,5 @@
 {
-  "name": "@jla/base-user-mongo",
+  "name": "@juliusagency/base-user-mongo",
   "version": "0.0.0-development",
   "description": "A npm package for use in Node.js projects.",
   "exports": {

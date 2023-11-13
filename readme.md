@@ -1,10 +1,10 @@
 ## Base User model for app with MongoDb
 
-The base-user-mongo package - is a component of the @jla/node [packages set](https://github.com/JuliusAgency/node-packages-set) for Nodejs applications.  
+The base-user-mongo package - is a component of the @juliusagency/node [packages set](https://github.com/JuliusAgency/node-packages-set) for Nodejs applications.  
 
 <p>
-  <a href="https://www.npmjs.com/package/@jla/base-user-mongo" target="_blank">
-    <img alt="Version" src="https://img.shields.io/npm/v/@jla/base-user-mongo.svg">
+  <a href="https://www.npmjs.com/package/@juliusagency/base-user-mongo" target="_blank">
+    <img alt="Version" src="https://img.shields.io/npm/v/@juliusagency/base-user-mongo.svg">
   </a>
   <a href="https://github.com/JuliusAgency/base-user-mongo#readme" target="_blank">
     <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
@@ -19,15 +19,15 @@ The base-user-mongo package - is a component of the @jla/node [packages set](htt
 
 ### Installation
 ```bash
-  npm install --save @jla/base-user-mongo
+  npm install --save @juliusagency/base-user-mongo
 ```
 
 ### Pre-conditions:
 ```
-The package is dedicated to be used with the following @jla packages:
-  - @jla/auth-jwt or auth-session;  
-  - @jla/auth-strategies;  
-  - @jla/base-user-mngr;  
+The package is dedicated to be used with the following @juliusagency packages:
+  - @juliusagency/auth-jwt or auth-session;  
+  - @juliusagency/auth-strategies;  
+  - @juliusagency/base-user-mngr;  
 ```
 
 ### Usage  
@@ -41,7 +41,7 @@ The package is dedicated to be used with the following @jla packages:
 ```
 import { Schema } from "mongoose";
 
-import { BaseUser } from "@jla/base-user-mongo";
+import { BaseUser } from "@juliusagency/base-user-mongo";
 
 
 export interface UserInterface {
