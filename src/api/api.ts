@@ -1,8 +1,8 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 /**
- * 
+ *
  * @param Model Wrapper for native Db API
- * @returns 
+ * @returns
  */
 
 export const dBApi = (Model: any) => {
@@ -28,11 +28,16 @@ export const dBApi = (Model: any) => {
     return await Model.findOneAndUpdate(filter, update, flags);
   };
 
+  const getPrimaryKeyName = () => {
+    return '_id';
+  };
+
   return {
     findById,
     findOne,
     findOneAndUpdate,
     deleteOne,
-    save
+    save,
+    getPrimaryKeyName,
   };
 };
