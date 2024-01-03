@@ -21,7 +21,8 @@ export const dBApi = (Model: any) => {
   };
 
   const findById = async (options: any) => {
-    return await Model.findById(options.id);
+    const pkn = getPrimaryKeyName();
+    return await Model.findById({ [pkn]: options[pkn] });
   };
 
   const findOneAndUpdate = async (filter: any, update: any, flags: any) => {
